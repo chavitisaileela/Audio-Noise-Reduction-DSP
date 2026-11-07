@@ -1,0 +1,26 @@
+filename,category,description,noise_type,snr_db,clean_reference,duration_s,sample_rate
+clean_speech/male_speech.wav,Clean Speech,"Male voiced speech formants (/a/, /i/, /u/)",None,Clean (Ground Truth),male_speech.wav,3.6,16000
+clean_speech/female_speech.wav,Clean Speech,Female voiced speech formants (pitch 220 Hz),None,Clean (Ground Truth),female_speech.wav,3.6,16000
+clean_speech/harvard_sentence.wav,Clean Speech,Phonetically rich Harvard sentence cadence,None,Clean (Ground Truth),harvard_sentence.wav,4.2,16000
+clean_speech/counting_digits.wav,Clean Speech,Spoken counting digits (1 to 4) with clear pauses,None,Clean (Ground Truth),counting_digits.wav,4.0,16000
+noise_sources/white_noise.wav,Noise Source,Gaussian broadband white thermal noise,white_noise,Pure Noise (No Speech),None,4.5,16000
+noise_sources/electrical_hum_50hz.wav,Noise Source,50 Hz electromagnetic power-line hum & harmonics,electrical_hum_50hz,Pure Noise (No Speech),None,4.5,16000
+noise_sources/cooling_fan.wav,Noise Source,Low-frequency blower cooling fan colored noise,cooling_fan,Pure Noise (No Speech),None,4.5,16000
+noise_sources/traffic_rumble.wav,Noise Source,Brownian low-frequency vehicular engine rumble,traffic_rumble,Pure Noise (No Speech),None,4.5,16000
+noise_sources/office_babble.wav,Noise Source,Multi-speaker background cafeteria/office cocktail-party babble,office_babble,Pure Noise (No Speech),None,4.5,16000
+noise_sources/factory_machinery.wav,Noise Source,Industrial machinery hum with repetitive impacts,factory_machinery,Pure Noise (No Speech),None,4.5,16000
+noisy_mixtures/male_white_minus5dB.wav,Noisy Mixture,Male speech + heavy white noise (-5 dB SNR),white,-5.0,male_speech.wav,3.6,16000
+noisy_mixtures/male_white_0dB.wav,Noisy Mixture,Male speech + white noise (0 dB SNR),white,-0.0,male_speech.wav,3.6,16000
+noisy_mixtures/male_white_5dB.wav,Noisy Mixture,Male speech + moderate white noise (5 dB SNR),white,5.0,male_speech.wav,3.6,16000
+noisy_mixtures/male_white_10dB.wav,Noisy Mixture,Male speech + mild white noise (10 dB SNR),white,10.0,male_speech.wav,3.6,16000
+noisy_mixtures/male_hum_minus5dB.wav,Noisy Mixture,Male speech + strong 50 Hz power-line hum (-5 dB SNR),hum,-5.0,male_speech.wav,3.6,16000
+noisy_mixtures/male_hum_0dB.wav,Noisy Mixture,Male speech + 50 Hz power-line hum (0 dB SNR),hum,0.0,male_speech.wav,3.6,16000
+noisy_mixtures/male_hum_5dB.wav,Noisy Mixture,Male speech + 50 Hz power-line hum (5 dB SNR),hum,5.0,male_speech.wav,3.6,16000
+noisy_mixtures/female_fan_0dB.wav,Noisy Mixture,Female speech + cooling fan noise (0 dB SNR),fan,-0.0,female_speech.wav,3.6,16000
+noisy_mixtures/female_fan_5dB.wav,Noisy Mixture,Female speech + cooling fan noise (5 dB SNR),fan,5.0,female_speech.wav,3.6,16000
+noisy_mixtures/female_fan_10dB.wav,Noisy Mixture,Female speech + mild fan noise (10 dB SNR),fan,10.0,female_speech.wav,3.6,16000
+noisy_mixtures/sentence_traffic_0dB.wav,Noisy Mixture,Harvard sentence + traffic rumble (0 dB SNR),traffic,-0.0,harvard_sentence.wav,4.2,16000
+noisy_mixtures/sentence_traffic_5dB.wav,Noisy Mixture,Harvard sentence + traffic rumble (5 dB SNR),traffic,5.0,harvard_sentence.wav,4.2,16000
+noisy_mixtures/sentence_traffic_10dB.wav,Noisy Mixture,Harvard sentence + mild traffic rumble (10 dB SNR),traffic,10.0,harvard_sentence.wav,4.2,16000
+noisy_mixtures/digits_mixed_5dB.wav,Noisy Mixture,"Spoken digits + mixed interference (Hum + Fan + White, 5 dB SNR)",mixed,5.0,counting_digits.wav,4.0,16000
+noisy_mixtures/digits_white_5dB.wav,Noisy Mixture,Spoken digits + Gaussian white noise (5 dB SNR),white,5.0,counting_digits.wav,4.0,16000

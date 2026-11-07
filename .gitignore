@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Pytest & Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Streamlit logs
+.streamlit/secrets.toml
+
+# IDE configuration
+.vscode/
+.idea/
+
+# Large temporary outputs (preserve .gitkeep)
+outputs/*.wav
